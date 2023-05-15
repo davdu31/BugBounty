@@ -3,12 +3,12 @@
 ## VPN *global*
 
 En cliquant sur l'icône du wifi en haut à droite de l'écran, puis sur "Connexions VPN"->"Configurer le VPN...".
-![confVPNglob1](https://github.com/davdu31/BugBounty/assets/35230152/a182811d-ab30-4cd4-bd1a-88173f3f23eb)
+![confVPNglob1](https://github.com/davdu31/BugBounty/assets/35230152/e9276118-f104-4f30-a212-b86507a2be02)
 Ensuite vous cliquez sur le + en bas à gauche de la fenêtre puis "Importer une configuration VPN enregistrée".
-![confVPNglob2](https://github.com/davdu31/BugBounty/assets/35230152/43deffb4-88ae-4d5e-891c-6673a9545311)
+![confVPNglob2](https://github.com/davdu31/BugBounty/assets/35230152/14982205-c064-4723-bc9a-0f9a1d290ad5)
 Là vous sélectionnez le fichier client.ovpn télécharger sur la page du bug bounty de YesWeHack et vous rentrez vos identifiants de connections à YesWeHack.
 Ensuite lorsque vous cochez "client" dans vos connections VPN vous y serez connectez.
-![confVPNglob3](https://github.com/davdu31/BugBounty/assets/35230152/6d85eef8-599c-439e-8ab2-356065f8d844)
+![confVPNglob3](https://github.com/davdu31/BugBounty/assets/35230152/b51f4176-6d28-4d9e-9fd4-623abb9d100d)
 A noter, l'utilisation du VPN peut vous limiter sur l'ensemble de vos connections (comme aller sur google par exemple) suivant sa configuration.
 
 ## VPN *via* un proxy
@@ -32,4 +32,4 @@ curl -x socks5://username:password@localhost:1080
 
 ### Burp Suite
 Pour utiliser Burp Suite, il faut rediriger le traffic par le proxy SOCKS à partir des options du projet :
-![burp](https://github.com/davdu31/BugBounty/assets/35230152/1aa85a04-c946-4256-aaa9-de23c4f120a5)
+![burp](https://github.com/davdu31/BugBounty/assets/35230152/6fede2f0-d925-43a8-895d-434aea7c1f04)
