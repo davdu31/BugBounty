@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+
+  openvpn-yeswehack:
+    image: dperson/openvpn-client
+    cap_add:
+      - net_admin
+    networks:
+      - default
+    read_only: true
+    tmpfs:
+      - /run
+      - /tmp
+    security_opt:
+      - label:disable
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./vpn:/vpn
+    ports:
+      - "1080:1080"
+    command: '-a ${YESWEHACK_EMAIL};${YESWEHACK_PASSWORD}'
+  socks-yeswehack:
+    image: serjs/go-socks5-proxy
+    depends_on:
+      - openvpn-yeswehack
+    environment:
+      - PROXY_USER=${PROXY_USER}
+      - PROXY_PASSWORD=${PROXY_PASSWORD}
+    network_mode: "service:openvpn-yeswehack"
+    stdin_open: true
+    tty: true
