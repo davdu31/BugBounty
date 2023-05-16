@@ -3,13 +3,18 @@
 ## VPN *global*
 
 En cliquant sur l'icône du wifi en haut à droite de l'écran, puis sur "Connexions VPN"->"Configurer le VPN...".
+
 ![confVPNglob1](https://github.com/davdu31/BugBounty/assets/35230152/e9276118-f104-4f30-a212-b86507a2be02)
+
 Ensuite vous cliquez sur le + en bas à gauche de la fenêtre puis "Importer une configuration VPN enregistrée".
+
 ![confVPNglob2](https://github.com/davdu31/BugBounty/assets/35230152/14982205-c064-4723-bc9a-0f9a1d290ad5)
+
 Là vous sélectionnez le fichier client.ovpn télécharger sur la page du bug bounty de YesWeHack et vous rentrez vos identifiants de connections à YesWeHack.
 Ensuite lorsque vous cochez "client" dans vos connections VPN vous y serez connectez.
 
 ![confVPNglob3](https://github.com/davdu31/BugBounty/assets/35230152/b51f4176-6d28-4d9e-9fd4-623abb9d100d)
+
 A noter, l'utilisation du VPN peut vous limiter sur l'ensemble de vos connections (comme aller sur google par exemple) suivant sa configuration.
 
 ## VPN *via* un proxy
