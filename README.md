@@ -16,6 +16,7 @@ A noter, l'utilisation du VPN peut vous limiter sur l'ensemble de vos connection
 ### Installation
 
 Une autre manière de procéder et d'utiliser le VPN via un proxy. Ceci vous permet de choisir lorsque vous passez ou non par ce VPN (que lors de vos recherche sur les sites du Bug Bounty).
+Il faudra néanmoins que `docker` et `docker-compose` soit installé sur votre machine (https://computingforgeeks.com/install-docker-and-docker-compose-on-kali-linux/)
 1. `git clone https://github.com/davdu31/BugBounty.git`
 2. `cd BugBounty`
 3. Modifier le fichier `.env` avec vos identifiants YesWeHack
