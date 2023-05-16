@@ -33,8 +33,8 @@ Il faudra néanmoins que `docker` et `docker-compose` soit installé sur votre m
 Maintenant, le proxy socks5 est disponible sur `localhost:1080`
 Vous pouvez utiliser différents outils en passant par ce proxy :
 ```bash
-ffuf -x socks5://username:password@localhost:1080
-curl -x socks5://username:password@localhost:1080
+ffuf -x socks5://username:password@localhost:1080 -H "User-Agent: BB23"
+curl -x socks5://username:password@localhost:1080 -H "User-Agent: BB23"
 ```
 
 ### Burp Suite
