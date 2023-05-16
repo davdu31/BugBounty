@@ -40,3 +40,5 @@ curl -x socks5://username:password@localhost:1080
 ### Burp Suite
 Pour utiliser Burp Suite, il faut rediriger le traffic par le proxy SOCKS à partir des options du projet :
 ![burp](https://github.com/davdu31/BugBounty/assets/35230152/6fede2f0-d925-43a8-895d-434aea7c1f04)
+
+Maintenant, le navigateur par default de Burp étant chromium, je peux naviguer sur firefox sans être connecté au VPN alors que je le suis lorsque j'utilise Burp.
